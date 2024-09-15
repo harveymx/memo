@@ -37,5 +37,6 @@
 
 ### Road2：使用liuliu的IPAD APP：DrawthingsAI
 主要是苹果为了专属芯片，开发一个适用于mac系统的SD系统，并在github上开源。不少优秀的开发者利用这个开源基础框架，开发了可以在mac和ipad、甚至iphone上纯本地运营的AI生图APP，其中DrawthingsAI是针对ipad的APP，更新很快。已经在APPStore下载安装，正在研究使用它。
- 
+ * 在Ipad appStore 下载 Drawthins AI
+ * 有前端专家还写了教程：https://blog.zhheo.com/p/5094f594.html
  update road2@2024-09-15
