@@ -15,3 +15,5 @@ const branch = RunnableBranch.from([
 ]);
 
 * 开发者遇到了deno和jupyter的冲突,deno server经常crash，重新安装jupyter notebook,以及VS code的插件（更新到preview版本）解决了
+
+* 练习IPad上的Drawthing AI，熟悉prompt和基础参数使用
