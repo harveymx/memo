@@ -3,6 +3,9 @@
 * baseURL的设置藏的比较深，通过阅读官方文档解决问题
 https://v02.api.js.langchain.com/classes/_langchain_openai.ChatOpenAI.html
 
+回答了github的一个问题：
+https://github.com/langchain-ai/langchain/discussions/8896
+
 import { ChatOpenAI } from "@langchain/openai";
 
 const model = new ChatOpenAI({
