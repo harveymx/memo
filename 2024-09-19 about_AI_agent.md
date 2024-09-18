@@ -19,6 +19,8 @@ https://mp.weixin.qq.com/s?__biz=MzUyODY0MTQ4OA==∣=2247484831&idx=1&sn=2eb3147
 
 https://meeting.tencent.com/user-center/shared-record-info?id=feb21e43-7f4d-4081-bfcc-ab3e3f57b36f&from=3
 
+https://developer.volcengine.com/articles/7384648672933642279
+
 https://github.com/samwit/langchain-tutorials
 
 * etc Stable diffision绘图知识
