@@ -44,8 +44,6 @@ go version
 
 rm go1.23.1.linux-amd64.tar.gz
 
-* 安装FIClash
-git clone https://github.com/chen08209/FlClash.git
-git submodule update --init --recursive
-//上述依赖包已经安装到位，Run build script
-dart .\setup.dart  #未成功，找时间再研究 todo...
+* (安装FIClash)-> 改安装SheelCrsh，整合度更高，不需要上述依赖安装
+https://github.com/juewuy/ShellCrash/
+其他知识：https://www.joeyne.cool/http/proxy/ubuntu-%e5%ae%89%e8%a3%85clash%e5%b9%b6%e9%85%8d%e7%bd%ae%e5%bc%80%e6%9c%ba%e5%90%af%e5%8a%a8/
