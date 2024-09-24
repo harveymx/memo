@@ -1,4 +1,4 @@
-## 2024-09-29 AI agent with langchain reAct
+## 2024-09-20 AI agent with langchain reAct
 使用langchain的reAct模式来实现agent
 * ReAct框架
 ReAct 框架是非常流行的 agent 框架，其结合了推理（reasoning）和行动（acting），其流程大概是让 llm 推理完成任务需要的步骤，然后根据环境和提供的工具进行调用，观察工具的结果，推理下一步任务。 就这样 推理-调用-观察 交错调用，直到模型认为完成推理，输出结果。
