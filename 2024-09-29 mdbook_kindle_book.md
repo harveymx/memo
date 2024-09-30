@@ -126,7 +126,7 @@
   * 完成！
 
 *参考链接：
-    https://blog.csdn.net/quicmous/article/details/139075131
+     https://blog.csdn.net/quicmous/article/details/139075131
     https://www.cnblogs.com/LLW-NEU/p/17857553.html
     https://mp.weixin.qq.com/s?__biz=MzIyNDQ2MTQwOQ==&mid=2247493433&idx=1&sn=8a6f2c9975f34b9e2e7be62479f24478&chksm=e80c3037df7bb9212d320ca3fff025a81347fbc163add2a0456ea5a522ab6a836755af84ccb6&token=1949573976&lang=zh_CN#rd
     https://geekflare.com/install-chromium-ubuntu-centos/
