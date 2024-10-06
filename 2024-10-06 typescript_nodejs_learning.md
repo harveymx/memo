@@ -1,9 +1,10 @@
 ### node.js、typescript学习 from TypeScript Deep Dive （中文版）
 链接：https://rexdainiel.gitbooks.io/typescript/content/
-**新认识了TypeScript的编辑器 ALM**
+**新认识了TypeScript的编辑器 ALM** 
     * A complete dev and analysis environment.
     * Easy to install: npm install alm -g
     * Easy to use: alm
+    * 注：不好用，删除之
 **快速开始一个node项目**
     1. 开始一个 nodejs 项目 package.json。快速的方法：npm init -y
     2. 添加 TypeScript（npm install typescript --save-dev）

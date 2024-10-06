@@ -88,5 +88,6 @@
     $ tsc app.ts util.ts --target esnext --outfile index.js
     ```
 
-### 礼毕，TypeScript全部学完（了解大概）
+### 最后，晚上对TypeScript的总结情况进行回顾和复习！
+### 礼毕，TypeScript全部学完（了解大概）！
 
