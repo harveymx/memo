@@ -16,3 +16,5 @@
 11、安装typescript、ts-node
 12、@2024-09-12 yarn add openai
 13、@2024-09-20 yarn add langsmith
+14、@2024-10-06 npm install alm -g // alm 是TS的开发和分析环境。
+
