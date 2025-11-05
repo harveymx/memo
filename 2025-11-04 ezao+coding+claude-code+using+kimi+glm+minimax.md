@@ -22,7 +22,9 @@
 * claude --dangerously-skip-permissions：免授权模式
 * /init 第一时间创建claude.md文件
 * /memory 调取并查看claude.md文件
-* /compact 压缩内容，要常使用，以节省token
+* /compact 压缩内容，以节省token
+* /context 建议编码时至少运行一次，看看 200k 个 token 的上下文窗口用了多少
+* 来自高手Shrivu Shankar的观点：别信自动压缩/compact。简单重启用 /clear，复杂任务用文档化后清空给它创建外部记忆。
 * 提前写好项目需求文件.md格式，copy到项目目录
 * 要求claude code生成技术文档：以下prompt
     @项目文档.md 是小程序的需求文档，现在需要你根据需求文档完成开发技术文档
@@ -55,14 +57,15 @@
 8、发送图片处理
 9、恢复历史会话
 Claude Code 提供两个选项来恢复之前的对话：
-* claude --continue 或者 claude -c：自动继续最近的对话，无需任何提示
-* claude --resume 或者 claude -r：显示历史对话选择器
+* **claude --continue 或者 claude -c：自动继续最近的对话，无需任何提示**
+* **claude --resume 或者 claude -r：显示历史对话选择器**
 这两个带参数的命令需要在「非交互模式」下进行，也就是还没有进入 Claude Code。
 交互模式: 如果你已经进入了 Claude Code 会话，想恢复到之前的哪个历史会话，可以使用 /resume 命令恢复历史会话
 10、记忆管理：/memory
 * 修改用户级记忆文件：每次请用中文回答我。后续所有交互就都是中文回答的了。
 * 如果 Claude Code 在某些情况下仍切换为英文，可以尝试清除会话缓存（如 /clear 命令）后重新加载配置。
 * 也可以使用其他方法股东简体中文回答，自行搜索
+* Claude Code 把所有会话历史存在 ~/.claude/projects/，可以挖掘原始数据
 11、和 Git 进行交互
 我修改了哪些文件、用合理描述性信息提交我的更改、
 推送本分支到远程、创建一个新分支:feature/test、
@@ -110,4 +113,7 @@ Claude Code 提供两个选项来恢复之前的对话：
 报告可直接存档，用作项目文档、会议纪要、下次 prompt 的素材，也方便后续检索和复盘。
 提示词：
 Please provide a comprehensive report on everything we've spoken about in this conversation. It should outline all elements to such a degree that by giving this report to a new AI instance it will have all the necessary context to pick up and continue from where we are right now. Do not worry about token output length.
+
+## 我的 Claude Code 实战经验：深度使用每个功能 
+https://mp.weixin.qq.com/s/bSGFZCUWgi_fv_T4lHOsnQ
 
