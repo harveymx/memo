@@ -143,7 +143,7 @@ macOS 钥匙串会记住，以后 VS Code / 终端都不再问。
 #### 登录方式 2：SSH 方式（本机生成公钥，提供给 github，一劳永逸，无需反复输令牌） 
 ---没有采用
 
-#### 设置代理
+#### 设置git代理
 
 永久性设置：
 ```
@@ -155,7 +155,28 @@ macOS 钥匙串会记住，以后 VS Code / 终端都不再问。
     git config --global --unset http.proxy
     git config --global --unset https.proxy
 ```
+#### 同理，可以设置terminal 终端的代理
+如 curl 的应用
+```
+    export https_proxy=http://127.0.0.1:7897   # 端口换成你的
+    export http_proxy=$https_proxy
 
+    // 测试一下
+    curl -I https://github.com
+
+```
+#### 查看 http proxy变量信息
+```
+    echo $https_proxy
+```
+或
+```
+    env | grep -i proxy
+```
+看 git 的代理：
+```
+    git config --global --get https.proxy
+```
 
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
