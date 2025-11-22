@@ -178,6 +178,32 @@ macOS 钥匙串会记住，以后 VS Code / 终端都不再问。
     git config --global --get https.proxy
 ```
 
+#### 一不小心提交了有点本地文件信息的文件，练习用 git-filter-repo 抹掉路径历史
+
+```
+# 安装工具（一次性）
+brew install git-filter-repo
+
+# 进入本地仓库
+cd your-repo
+
+# 彻底删除 “private/秘密文件夹” 及其历史
+git filter-repo  --invert-paths --force --path private/秘密文件夹
+
+# 查看你原来的远程地址（复制备用）
+git remote -v
+# 通常为空，因为被清掉了
+
+# 重新添加 origin
+git remote add origin https://github.com/你的用户名/仓库.git
+
+# 强制推送到 GitHub（会重写远程历史）
+git remote add origin https://github.com/你的用户名/仓库.git
+git push origin --force --all
+git push origin --force --tags
+```
+删除完之后，所有人都要 重新 clone（历史已变）。本地 所有旧副本也要删掉再重新拉取，否则会被“污染”重新推上去。
+
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
 https://www.bilibili.com/video/BV1bC4y1q7t8?spm_id_from=333.788.player.player_end_recommend&vd_source=5342240dd1e8515fba0e9b9e99f77a5e
