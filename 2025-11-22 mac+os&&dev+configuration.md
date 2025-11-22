@@ -121,8 +121,8 @@
 ```
         # Always reply in Chinese.  
 ```
-### git 环境配置（thx to kimi app）
-#### 一次性的全局身份（必须） 打开终端 → 填你自己的名字和邮箱（全局生效）：
+### git 环境配置
+#### 配置用户（全局生效）：
 
 bash
 ```
@@ -134,14 +134,28 @@ git config --global user.name "harveymx"
 git config --global user.email "meetxu@gmail.com"
 
 
-#### HTTPS 方式（最简单，VS Code 开箱即用）
+#### 登录方式1：HTTPS 方式（最简单，VS Code 开箱即用）
  
 在 vscode 中第一次 Push 时弹窗 → 用户名填 GitHub/Gitee 账号，密码填「个人访问令牌」（不是登录密码！）
 令牌生成入口：GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic) → 勾选  repo  → Generate
 macOS 钥匙串会记住，以后 VS Code / 终端都不再问。
 
-#### SSH 方式（本机生成公钥，提供给 github，一劳永逸，无需反复输令牌） 
+#### 登录方式 2：SSH 方式（本机生成公钥，提供给 github，一劳永逸，无需反复输令牌） 
 ---没有采用
+
+#### 设置代理
+
+永久性设置：
+```
+    git config --global http.proxy http://127.0.0.1:7897
+    git config --global https.proxy http://127.0.0.1:7897
+```
+用完随时可关：
+```
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
+```
+
 
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
