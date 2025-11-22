@@ -34,6 +34,7 @@
     * cleanShotX：截屏
 #### 安装 罗技 options+
 #### 安装 X网友 tw93的清理软件:brew install tw93/tap/mole
+#### 安装坚果云 brew instal nutstore
 
 ### 安装开发者工具（with homebrew）：
     * (homebrew)+iTerm2+ oh-my-zsh: https://juejin.cn/post/7257740918432792632 暂时不用-可被下面取代
@@ -44,6 +45,7 @@
     * Cherry studio
     * Mac screen studio
     * setApp
+    * nmap:网络端口扫描工具 ; brew install nmap ; nmap localhost
 
 ### claude code 环境
 #### 安装 Node.js，这里使用 最先进的 volta 来管理 Node.js 的包
@@ -155,6 +157,21 @@ macOS 钥匙串会记住，以后 VS Code / 终端都不再问。
     git config --global --unset http.proxy
     git config --global --unset https.proxy
 ```
+
+所以，为了方便，在~/.zshrc 创建一个快速函数 git_proxy_on 和 git_proxy_off，可执行：
+```
+    git_proxy_on() {
+    git config --global http.proxy http://127.0.0.1:7890
+    git config --global https.proxy http://127.0.0.1:7890
+    echo "Git proxy on"
+    }
+    git_proxy_off() {
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
+    echo "Git proxy off"
+    }
+```
+
 #### 同理，可以设置terminal 终端的代理
 如 curl 的应用
 ```
