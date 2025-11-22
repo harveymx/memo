@@ -211,7 +211,9 @@ https://www.bilibili.com/video/BV1bC4y1q7t8?spm_id_from=333.788.player.player_en
 * 在终端设置代理：
 export http_proxy="http://127.0.0.1:7897"  
 export https_proxy="http://127.0.0.1:7897"
+export socks_proxy="socks://127.0.0.1/7897"
 curl -v https://www.google.com
+mac 终端设置代理，具体看 ： https://ichochy.com/posts/mac/20231125.html
 
 * iTerm2最常用的主题是Solarized Dark theme
 下载地址：http://ethanschoonover.com/solarized，打开iTerm2 -> Preferences，然后Profiles ---> Colors -> Color Presets -> Import ，选择Solarized Dark.itermcolors文件，导入，最后选择Solarized Dark。
