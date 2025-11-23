@@ -30,15 +30,22 @@
 #### 安装微信输入法、chrome、evernote/印象笔记...
 #### 安装上网工具
 #### 安装 raycast
-#### 安装@macwk:
-    * cleanShotX：截屏
+#### 安装@macwk:(dmg安装)
+* cleanShotX：截屏
+* BetterMouse：更靠近windows的鼠标平滑使用,尤其罗技鼠标   
 #### 安装 罗技 options+
+#### 安装 LocalSend : 跨系统局域网文件快传
 #### 安装 X网友 tw93的清理软件:brew install tw93/tap/mole
-#### 安装坚果云 brew instal nutstore
+#### 安装 unarchiver ： 解压缩软件
+#### 安装 microsoft office
+#### 安装坚果云 brew instal nutstore (同步 coding 工具)
 
 ### 安装开发者工具（with homebrew）：
     * (homebrew)+iTerm2+ oh-my-zsh: https://juejin.cn/post/7257740918432792632 暂时不用-可被下面取代
-    * warp & warp.dev
+    * warp @ warp.dev
+    * vs code : brew install --cask visual-studio-code
+    * python3 : brew install python3 ；Mac有自带python，修改.zprofile,让brew版的python在最前面即可，与系统版互不干扰
+    * OrbStack：极速docker替代品
     * Sublime Text 
     * cpolar
     * kimi
@@ -220,6 +227,38 @@ git push origin --force --all
 git push origin --force --tags
 ```
 删除完之后，所有人都要 重新 clone（历史已变）。本地 所有旧副本也要删掉再重新拉取，否则会被“污染”重新推上去。
+
+### 编程字体(免费)
+
+#### 安装
+```
+# 连字 + 超高辨识度
+brew install --cask font-jetbrains-mono
+brew install --cask font-fira-code
+brew install --cask font-cascadia-code
+brew install --cask font-source-code-pro
+
+# 超窄 / 可定制狂魔
+brew install --cask font-iosevka
+
+# 经典 Mac 风味
+brew install --cask font-meslo-lg-nerd-font   # Monaco 血统 + Powerline 符号
+```
+#### 使用:
+* vs code： ⌘,  → 搜索  font  →
+```
+"editor.fontFamily": "FiraCode-Retina, JetBrains Mono, MesloLGS NF, monospace",
+"editor.fontSize": 14,
+"editor.lineHeight": 22,
+"editor.fontLigatures": true
+```
+* iTerm2 : ⌘,  → Profiles → Text → Change Font → 选 MesloLGS NF 13 pt → 勾选「Use ligatures」
+
+#### 推荐组合
+* 日常开发：JetBrains Mono 14 pt + 1.5 行距（VS Code 默认）
+* 终端 + oh-my-zsh：MesloLGS NF 13 pt（iTerm2 自带 Powerline 符号不缺失）
+* 想省屏幕宽度：Iosevka 12 pt（比同类窄 10 %，一屏多看 20 列）
+
 
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
