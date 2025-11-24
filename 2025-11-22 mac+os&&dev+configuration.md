@@ -259,6 +259,13 @@ brew install --cask font-meslo-lg-nerd-font   # Monaco 血统 + Powerline 符号
 * 终端 + oh-my-zsh：MesloLGS NF 13 pt（iTerm2 自带 Powerline 符号不缺失）
 * 想省屏幕宽度：Iosevka 12 pt（比同类窄 10 %，一屏多看 20 列）
 
+#### 新字体@2025.11.24
+* 'Source Code Pro', 'LXGW WenKai Mono'
+* 'Maple Mono NF CN', 'Ubuntu Mono', 'Source Code Pro', ' monospace
+* 'Noto Sans Mono CJK SC', monospace
+* 'Ubuntu Mono',  monospace, 'LXGW WenKai Mono'
+* 'JetBrains Maple Mono', 'Ubuntu Mono',  monospace, 'LXGW WenKai Mono'
+* 全：'JetBrains Maple Mono', 'Maple Mono', 'Ubuntu Mono', 'Source Code Pro', 'Noto Sans Mono CJK SC', monospace, 'LXGW WenKai Mono'
 
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
