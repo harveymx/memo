@@ -26,13 +26,14 @@
     * 启动台：12*8
     * 应用程序->分栏式浏览
     * 程序坞设置
-    
+
 #### 安装微信输入法、chrome、evernote/印象笔记...
 #### 安装上网工具
 #### 安装 raycast
 #### 安装@macwk:(dmg安装)
 * cleanShotX：截屏
-* BetterMouse：更靠近windows的鼠标平滑使用,尤其罗技鼠标   
+* BetterMouse：更靠近windows的鼠标平滑使用,尤其罗技鼠标  
+* BetterDisplay ：控制外接显示器 
 #### 安装 罗技 options+
 #### 安装 LocalSend : 跨系统局域网文件快传
 #### 安装 X网友 tw93的清理软件:brew install tw93/tap/mole
@@ -247,24 +248,21 @@ brew install --cask font-meslo-lg-nerd-font   # Monaco 血统 + Powerline 符号
 #### 使用:
 * vs code： ⌘,  → 搜索  font  →
 ```
-"editor.fontFamily": "FiraCode-Retina, JetBrains Mono, MesloLGS NF, monospace",
+"editor.fontFamily": "FiraCode-Retina, JetBrains Mono, MesloLGS NF, monospace", ## 更新详见下面
 "editor.fontSize": 14,
 "editor.lineHeight": 22,
 "editor.fontLigatures": true
 ```
 * iTerm2 : ⌘,  → Profiles → Text → Change Font → 选 MesloLGS NF 13 pt → 勾选「Use ligatures」
 
-#### 推荐组合
-* 日常开发：JetBrains Mono 14 pt + 1.5 行距（VS Code 默认）
-* 终端 + oh-my-zsh：MesloLGS NF 13 pt（iTerm2 自带 Powerline 符号不缺失）
-* 想省屏幕宽度：Iosevka 12 pt（比同类窄 10 %，一屏多看 20 列）
-
 #### 新字体@2025.11.24
-* 'Source Code Pro', 'LXGW WenKai Mono'
-* 'Maple Mono NF CN', 'Ubuntu Mono', 'Source Code Pro', ' monospace
-* 'Noto Sans Mono CJK SC', monospace
+* 'Ubuntu Mono', 'Source Code Pro', Consolas, 'Courier New', monospace, 'LXGW WenKai Mono' # !!强烈推荐!!
 * 'Ubuntu Mono',  monospace, 'LXGW WenKai Mono'
-* 'JetBrains Maple Mono', 'Ubuntu Mono',  monospace, 'LXGW WenKai Mono'
+* 'Maple Mono NF CN', 'Ubuntu Mono', 'Source Code Pro', ' monospace
+* 'JetBrains Maple Mono', 'Ubuntu Mono',  monospace
+* 'Source Code Pro', 'LXGW WenKai Mono'
+* 'LXGW WenKai Mono'
+* 'Noto Sans Mono CJK SC', monospace
 * 全：'JetBrains Maple Mono', 'Maple Mono', 'Ubuntu Mono', 'Source Code Pro', 'Noto Sans Mono CJK SC', monospace, 'LXGW WenKai Mono'
 
 ### 相关参考
