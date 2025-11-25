@@ -9,14 +9,4 @@
         - 帮助 @zelda help
 * npm install -g zelda-claude-code@latest 之后重新进入claude
 
-# 个人中心的前端设计和实现
-## 迭代内容
-· 个人头像
-· 会员等级
-· 会员付费升级
-· 订单查看
-· 隐私政策
-· 交流、传播等
-
-liLI10Oo
-你好中文
+# 继续完善个人中心的前端设计和实现

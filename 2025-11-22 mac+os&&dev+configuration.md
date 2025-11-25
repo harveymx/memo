@@ -110,10 +110,24 @@
     * volta uninstall： 删除已安装在 volta install 中的任何全局包。示例：volta uninstall node@16
     * volta pin：       更新一个项目的 package.json 文件以使用工具的选定版本。示例：volta pin node@16 volta pin yarn@1.19
     * volta list：      检查已安装的 Node 运行时、包管理器和带有二进制文件的包。示例：volta list
+* 注意以后避免用nmp安装管理包，而是用volta
+    * volta不仅仅是一个Node版本管理器，它是一个完整的JavaScript环境管理器。Volta控制你系统使用的Node.js版本；Volta也管理npm；Volta有自己的方式来管理全局安装的包。当你运行volta install node或volta run npm install时，Volta会确保这些命令使用它管理的Node和npm版本。
+    * 始终使用volta run来执行npm命令
+    ```
+    volta run npm install -g <package>
+    ```
+    * 定期检查环境一致性
+    ```
+    volta run npm config list
+    volta which node
+    volta which npm
+    ```
+    * 避免直接使用npm，特别是在Volta环境下
 
-```
-    brew install node #如果不用 volta
-```
+* 如果不用volta,可以直接brew安装
+    ```
+    brew install node
+    ```
 
 #### 安装 cluade code
 ```
