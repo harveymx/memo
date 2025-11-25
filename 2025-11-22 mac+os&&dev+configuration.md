@@ -29,7 +29,7 @@
 
 #### 安装微信输入法、chrome、evernote/印象笔记...
 #### 安装上网工具
-#### 安装 raycast
+#### 安装 raycast，及其必要的插件
 #### 安装@macwk:(dmg安装)
 * cleanShotX：截屏
 * BetterMouse：更靠近windows的鼠标平滑使用,尤其罗技鼠标  
@@ -40,9 +40,35 @@
 #### 安装 unarchiver ： 解压缩软件
 #### 安装 microsoft office
 #### 安装坚果云 brew instal nutstore (同步 coding 工具)
+#### 安装Rime 鼠须管 输入法
+```
+    # 安装鼠须管
+    brew install --cask squirrel
+    # 安装后建议重启系统
+    sudo reboot
+```
+复制了雾凇拼音方案：
+```
+    # 克隆仓库到Rime配置目录
+    cd ~/Library/Rime/
+    git clone https://github.com/iDvel/rime-ice.git . --depth 1
+    # 后续更新只需要
+    git pull
+```
+推荐相关配置：https://www.ypplog.cn/RIME-setup-deploy/
+
 
 ### 安装开发者工具（with homebrew）：
     * (homebrew)+iTerm2+ oh-my-zsh: https://juejin.cn/post/7257740918432792632 暂时不用-可被下面取代
+        * oh-my-zsh (theme:agnoster、robbyrussell、clean):
+```
+        # 安装
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        # 升级
+        omz update
+        # 卸载（干净）
+        uninstall_oh_my_zsh        # 脚本自动还原备份 zshrc
+```
     * warp @ warp.dev
     * vs code : brew install --cask visual-studio-code
     * python3 : brew install python3 ；Mac有自带python，修改.zprofile,让brew版的python在最前面即可，与系统版互不干扰
@@ -54,6 +80,7 @@
     * Mac screen studio
     * setApp
     * nmap:网络端口扫描工具 ; brew install nmap ; nmap localhost
+    * 有关zsh 的更多: https://www.poloxue.com/posts/2023-10-16-zsh-themes-and-plugins/
 
 ### claude code 环境
 #### 安装 Node.js，这里使用 最先进的 volta 来管理 Node.js 的包
@@ -256,14 +283,17 @@ brew install --cask font-meslo-lg-nerd-font   # Monaco 血统 + Powerline 符号
 * iTerm2 : ⌘,  → Profiles → Text → Change Font → 选 MesloLGS NF 13 pt → 勾选「Use ligatures」
 
 #### 新字体@2025.11.24
-* 'Ubuntu Mono', 'Source Code Pro', Consolas, 'Courier New', monospace, 'LXGW WenKai Mono' # !!强烈推荐!!
+* 'Ubuntu Mono', 'Source Code Pro', Consolas, 'Courier New', monospace, 'LXGW WenKai Mono' # !!强烈推荐 win!!
+*  Maple Mono NF CN, Ubuntu Mono, Source Code Pro, monospace, LXGW WenKai Mono  ## !!推荐 mac
 * 'Ubuntu Mono',  monospace, 'LXGW WenKai Mono'
-* 'Maple Mono NF CN', 'Ubuntu Mono', 'Source Code Pro', ' monospace
+* 'Maple Mono NF CN', 'Ubuntu Mono', 'Source Code Pro', ' monospace 
 * 'JetBrains Maple Mono', 'Ubuntu Mono',  monospace
 * 'Source Code Pro', 'LXGW WenKai Mono'
 * 'LXGW WenKai Mono'
 * 'Noto Sans Mono CJK SC', monospace
 * 全：'JetBrains Maple Mono', 'Maple Mono', 'Ubuntu Mono', 'Source Code Pro', 'Noto Sans Mono CJK SC', monospace, 'LXGW WenKai Mono'
+
+Ubuntu Mono, JetBrains Mono, FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace
 
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
