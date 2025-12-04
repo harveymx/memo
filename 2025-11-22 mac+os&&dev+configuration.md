@@ -41,6 +41,7 @@
 #### 安装 microsoft office
 #### 安装坚果云 brew instal nutstore (同步 coding 工具)
 #### 安装Rime 鼠须管 输入法
+#### 安装fastfetch 秀配置(neofetch的升级版)
 ```
     # 安装鼠须管
     brew install --cask squirrel
@@ -308,6 +309,38 @@ brew install --cask font-meslo-lg-nerd-font   # Monaco 血统 + Powerline 符号
 * 全：'JetBrains Maple Mono', 'Maple Mono', 'Ubuntu Mono', 'Source Code Pro', 'Noto Sans Mono CJK SC', monospace, 'LXGW WenKai Mono'
 
 Ubuntu Mono, JetBrains Mono, FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace
+
+### 增强命令
+
+```
+# tree 命令列文件也很方便
+➜ brew install tree
+
+# 查看系统状态信息
+➜ brew install neofetch
+➜ brew install fastfetch
+```
+
+```
+# ip 命令 查看ip地址很方便
+➜ brew install iproute2mac
+
+# frps 与 frpc 穿透神器
+➜ brew install frps # 配置文件 frps -c /opt/homebrew/etc/frp/frps.ini
+➜ brew install frpc # 配置文件 frpc -c /opt/homebrew/etc/frp/frpc.ini
+```
+
+```
+# 图片压缩使用开源的 imageoptim 很方便
+➜ brew install imagemagick
+
+# you-get 数码下载神器
+➜ brew install ffmpeg
+➜ brew install you-get
+
+# 复制克隆离线镜像网站
+➜ brew install httrack
+```
 
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
