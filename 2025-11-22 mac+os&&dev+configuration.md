@@ -338,6 +338,48 @@ Ubuntu Mono, JetBrains Mono, FiraCode-Retina, Menlo, Monaco, 'Courier New', mono
 # 复制克隆离线镜像网站
 ➜ brew install httrack
 ```
+### 鼠须管 进入应用时的默认状态 配置
+
+编辑更新配置文件：
+```
+vim ~/Library/Rime/squirrel.custom.yaml
+```
+输入以下内容：
+```
+ 1 patch:
+  2   app_options:
+  3     # 设置 iTerm2 的默认输入状态
+  4     com.googlecode.iterm2:
+  5       ascii_mode: true       # 默认英文输入
+  6       sacii_punct: true      # 使用英文标点
+  7       # 可选的其他配置项
+  8       # theme: light         # 应用主题
+  9       # font_size: 12        # 字体大小
+ 10     # 设置 warp的默认输入状态
+ 11     dev.warp.Warp-Stable:
+ 12       ascii_mode: true       # 默认英文输入
+ 13       sacii_punct: true      # 使用英文标点
+ 14     # 设置 微信开发者工具的默认输入状态
+ 15     com.tencent.webplusdevtools:
+ 16       ascii_mode: true       # 默认英文输入
+ 17       sacii_punct: true      # 使用英文标点
+ 18     # 设置 VS Code 的默认输入状态
+ 19     com.microsoft.VSCode:
+ 20       ascii_mode: true       # 默认英文输入
+ 21       sacii_punct: true      # 使用英文标点
+ 22     # 设置 Safari 的默认输入状态
+ 23     com.apple.Safari:
+ 24       ascii_mode: true       # 默认英文输入
+ 25       sacii_punct: true      # 使用英文标点
+ 26     # 设置 Google Chrome 的默认输入状态
+ 27     com.google.Chrome:
+ 28       ascii_mode: true       # 默认英文输入
+ 29       sacii_punct: true      # 使用英文标点
+ 30     # 设置微信的默认输入状态
+ 31     com.tencent.xinWeChat:
+ 32       ascii_mode: false      # 默认中文输入
+```
+保存并重新部署：按  Ctrl + Option + ~  重新部署
 
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
