@@ -32,12 +32,21 @@
 #### 安装 raycast，及其必要的插件
 #### 安装@macwk:(dmg安装)
 * cleanShotX：截屏
+* HitPaw Watermark Remover 去图片水印工具 for ezao图片管理
 * BetterMouse：更靠近windows的鼠标平滑使用,尤其罗技鼠标  
 * BetterDisplay ：控制外接显示器 
+* supercharge: 显示解决快捷键按键冲突 install@2025.12.23
+* downie 4 : 下载网页中的视频
+* QSpace pro: 文件管理/替代访达
 #### 安装 罗技 options+
 #### 安装 LocalSend : 跨系统局域网文件快传
 #### 安装 X网友 tw93的清理软件:brew install tw93/tap/mole
 #### 安装 unarchiver ： 解压缩软件
+#### brew 安装:
+* keyclu: 自定义键（如双击opt）显示当前app的快捷键 install@2025.12.23
+* keka： 压缩软件
+* Bob: 翻译软件  brew install --cask bob-app
+* Picture View : 轻巧快速的 macOS 图片浏览应用
 #### 安装 microsoft office
 #### 安装坚果云 brew instal nutstore (同步 coding 工具)
 #### 安装Rime 鼠须管 输入法
@@ -74,7 +83,8 @@
     * vs code : brew install --cask visual-studio-code
     * python3 : brew install python3 ；Mac有自带python，修改.zprofile,让brew版的python在最前面即可，与系统版互不干扰
     * OrbStack：极速docker替代品
-    * Sublime Text 
+    * Sublime Text
+    * orbStack: 运行 Docker 容器和 Linux 的快速、轻便且简单的方案。用来替代Docker Desktop。brew安装 
     * cpolar
     * kimi
     * Cherry studio
@@ -384,6 +394,8 @@ vim ~/Library/Rime/squirrel.custom.yaml
 ### 相关参考
 * 购买Macbook之后，一定要改变的设置 & 必装软件！（2024最新）feat. 隐藏功能 ｜大耳朵TV
 https://www.bilibili.com/video/BV1bC4y1q7t8?spm_id_from=333.788.player.player_end_recommend&vd_source=5342240dd1e8515fba0e9b9e99f77a5e
+* [推荐]Mac软件折腾之路:
+https://blog.goalonez.site/blog/Mac%E8%BD%AF%E4%BB%B6%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF.html
 
 * 在终端设置代理：
 export http_proxy="http://127.0.0.1:7897"  
