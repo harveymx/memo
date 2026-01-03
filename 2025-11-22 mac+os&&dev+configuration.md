@@ -29,7 +29,8 @@
 
 #### 安装微信输入法、chrome、evernote/印象笔记...
 #### 安装上网工具
-#### 安装 raycast，及其必要的插件
+#### 安装 raycast，及其必要的插件(store中)
+* 插件  Paste as Plain Text : 剪贴为纯文本
 #### 安装@macwk:(dmg安装)
 * cleanShotX：截屏
 * HitPaw Watermark Remover 去图片水印工具 for ezao图片管理
