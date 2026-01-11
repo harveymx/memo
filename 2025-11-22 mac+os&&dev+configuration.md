@@ -51,7 +51,6 @@
 #### 安装 microsoft office
 #### 安装坚果云 brew instal nutstore (同步 coding 工具)
 #### 安装Rime 鼠须管 输入法
-#### 安装fastfetch 秀配置(neofetch的升级版)
 ```
     # 安装鼠须管
     brew install --cask squirrel
@@ -68,6 +67,12 @@
 ```
 推荐相关配置：https://www.ypplog.cn/RIME-setup-deploy/
 
+#### 安装fastfetch 秀配置(neofetch的升级版)
+#### 安装按键映射 Karabiner ：brew install --cask karabiner
+* Shift切换输入法：shift -> ctrl+空格
+* del键删除文件：del -> cmd+退格键
+#### 安装浏览器插件
+* trancy: 沉浸式翻译的替代者
 
 ### 安装开发者工具（with homebrew）：
     * (homebrew)+iTerm2+ oh-my-zsh: https://juejin.cn/post/7257740918432792632 暂时不用-可被下面取代
